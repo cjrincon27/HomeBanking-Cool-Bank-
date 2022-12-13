@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container1{
+    width: 50%;
+    background-color:rgba(8, 12, 233, 0.432);
+    border-radius: 3rem;
+    padding:2rem;
+}
+.container2{
+    width: 50%;
+}
+main{
+    background-color:rgba(14, 18, 253, 0.432);
+    height: 100vh;
+    padding: 5rem;
+}
+label{
+    color: white;
+}
+h1{
+    color: white;
+}
+h2,th,td{
+    color: white;
+}

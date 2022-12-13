@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/register.css">
+</head>
+<body>
+
+        <main  id="app">
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>Are you client?</h3>
+                        <p>Login to access accounts</p>
+                        <a href="./login.html"><button id="btn__iniciar-sesion">login</button></a>
+                    </div>
+                </div>
+                <div  class="contenedor__login-register">
+                    <form action="#" method="post" @submit.prevent="registerForm"  class="formulario__register validate-form">
+                        <h2>Regístrarse</h2>
+                        <input v-model="firstName" required="" type="text" placeholder="firts name">
+                        <input v-model="lastName" required="" type="text" placeholder="last name">
+                        <input  v-model="email" required="" type="text" placeholder="email">
+                        <input v-model="password" required="" type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+
+                </div>
+                <!--Formulario de Login y registro-->
+                
+            </div>
+
+        </main>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./assets/js/register.js"></script>
+</body>
+</html>
